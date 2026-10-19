@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gortac.github.io/gortac-site/sitemap.xml

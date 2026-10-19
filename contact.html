@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<meta name="robots" content="index,follow">
+<link rel="icon" href="/gortac-site/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/gortac-site/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap">
+<link rel="stylesheet" href="/gortac-site/assets/style.css?v=202610200032">
+<meta name="theme-color" content="#15203a">
+
+<title>お問い合わせ・お見積依頼｜株式会社GORTAC</title>
+<meta name="description" content="オリジナルグッズ・ノベルティ・OEM制作のご相談、お見積のご依頼はこちらから。商品が決まっていない段階でもお気軽にご相談ください。">
+<link rel="canonical" href="https://gortac.github.io/gortac-site/contact.html">
+<meta property="og:title" content="お問い合わせ・お見積依頼｜株式会社GORTAC">
+<meta property="og:image" content="https://gortac.github.io/gortac-site/ogp.png">
+
+</head>
+<body>
+
+<a class="skip" href="#main">本文へ移動</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="/gortac-site/index.html" aria-label="株式会社GORTAC トップページ">
+      <span class="logo-mark">GORTAC</span><span class="logo-sub">オリジナルグッズ・OEM</span>
+    </a>
+    <nav class="nav" aria-label="メインメニュー">
+      <ul>
+        <li><a href="/gortac-site/index.html#service">サービス</a></li>
+        <li><a href="/gortac-site/index.html#products">制作できる商品</a></li>
+        <li><a href="/gortac-site/index.html#flow">制作の流れ</a></li>
+        <li><a href="/gortac-site/index.html#faq">よくある質問</a></li>
+        <li><a href="/gortac-site/index.html#company">会社概要</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary header-cta" href="/gortac-site/contact.html">相談する</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="メニューを開く">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="メインメニュー">
+    <ul>
+      <li><a href="/gortac-site/index.html#service">サービス</a></li>
+      <li><a href="/gortac-site/index.html#products">制作できる商品</a></li>
+      <li><a href="/gortac-site/index.html#flow">制作の流れ</a></li>
+      <li><a href="/gortac-site/index.html#faq">よくある質問</a></li>
+      <li><a href="/gortac-site/index.html#company">会社概要</a></li>
+      <li><a href="/gortac-site/contact.html">お問い合わせ</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<main id="main">
+  <div class="page-head">
+    <div class="wrap">
+      <h1>お問い合わせ・お見積依頼</h1>
+      <p>わかる範囲のご記入で大丈夫です。未定の項目は空欄のまま送信できます。</p>
+    </div>
+  </div>
+
+  <div class="wrap form-layout">
+    <form class="form" id="contact-form" novalidate data-endpoint="https://script.google.com/macros/s/AKfycbxhIgfPR72fV5kInJh8KzWTn8-fxu0Hkrq06VuDNdhEBoxhqVig3rqiArYAa5Qvtfcl/exec">
+      <div class="form-status err" id="form-error" role="alert" hidden></div>
+
+      <fieldset class="field" id="f-type">
+        <legend>ご相談の種類<span class="req">必須</span></legend>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="type" value="OEM・オリジナル制作" required><span>OEM・オリジナル制作</span></label>
+          <label class="choice"><input type="radio" name="type" value="ノベルティ・販促グッズ"><span>ノベルティ・販促グッズ</span></label>
+          <label class="choice"><input type="radio" name="type" value="キャラクター・エンタメグッズ"><span>キャラクター・エンタメグッズ</span></label>
+          <label class="choice"><input type="radio" name="type" value="その他"><span>その他</span></label>
+        </div>
+        <p class="error-msg" id="err-type" hidden>ご相談の種類を選んでください。</p>
+      </fieldset>
+
+      <input type="hidden" name="request" id="request" value="相談">
+      <div class="form-status info" id="estimate-note" hidden>お見積のご依頼として受け付けます。数量・希望納期・仕様がわかる場合はご記入ください。</div>
+
+      <div class="field">
+        <label for="company">会社名・団体名<span class="opt">任意</span></label>
+        <input class="input" id="company" name="company" type="text" autocomplete="organization" maxlength="100">
+      </div>
+
+      <div class="field">
+        <label for="last-name">お名前<span class="req">必須</span></label>
+        <div class="row-2">
+          <input class="input" id="last-name" name="lastName" type="text" autocomplete="family-name" placeholder="姓" required maxlength="40" aria-describedby="err-name">
+          <input class="input" id="first-name" name="firstName" type="text" autocomplete="given-name" placeholder="名" required maxlength="40" aria-describedby="err-name" aria-label="名">
+        </div>
+        <p class="error-msg" id="err-name" hidden>お名前（姓・名）を入力してください。</p>
+      </div>
+
+      <div class="field">
+        <label for="email">メールアドレス<span class="req">必須</span></label>
+        <input class="input" id="email" name="email" type="email" autocomplete="email" inputmode="email" required maxlength="200" aria-describedby="err-email">
+        <p class="error-msg" id="err-email" hidden>メールアドレスを正しい形式で入力してください（例：name@example.co.jp）。</p>
+      </div>
+
+      <div class="field">
+        <label for="tel">電話番号<span class="opt">任意</span></label>
+        <input class="input" id="tel" name="tel" type="tel" autocomplete="tel" inputmode="tel" maxlength="20" aria-describedby="err-tel">
+        <p class="error-msg" id="err-tel" hidden>電話番号は数字とハイフンで入力してください。</p>
+      </div>
+
+      <fieldset class="field">
+        <legend>商品カテゴリ<span class="opt">任意・複数選択可</span></legend>
+        <div class="choices">
+          <label class="choice"><input type="checkbox" name="category" value="Tシャツ・アパレル"><span>Tシャツ・アパレル</span></label>
+          <label class="choice"><input type="checkbox" name="category" value="アクリルスタンド"><span>アクリルスタンド</span></label>
+          <label class="choice"><input type="checkbox" name="category" value="アクリルキーホルダー"><span>アクリルキーホルダー</span></label>
+          <label class="choice"><input type="checkbox" name="category" value="ぬいぐるみ"><span>ぬいぐるみ</span></label>
+          <label class="choice"><input type="checkbox" name="category" value="PVCフィギュア"><span>PVCフィギュア</span></label>
+          <label class="choice"><input type="checkbox" name="category" value="ステッカー"><span>ステッカー</span></label>
+          <label class="choice"><input type="checkbox" name="category" value="スマホ関連"><span>スマホ関連</span></label>
+          <label class="choice"><input type="checkbox" name="category" value="小型家電・ガジェット"><span>小型家電・ガジェット</span></label>
+          <label class="choice"><input type="checkbox" name="category" value="その他・未定"><span>その他・未定</span></label>
+        </div>
+      </fieldset>
+
+      <div class="field">
+        <label for="quantity">予定数量<span class="opt">任意</span></label>
+        <input class="input" id="quantity" name="quantity" type="text" maxlength="60" placeholder="例：500個、未定">
+      </div>
+
+      <div class="field">
+        <label for="deadline">希望納期<span class="opt">任意</span></label>
+        <input class="input" id="deadline" name="deadline" type="text" maxlength="60" placeholder="例：12月中旬、イベント日が3月1日、未定">
+      </div>
+
+      <div class="field">
+        <label for="budget">ご予算<span class="opt">任意</span></label>
+        <input class="input" id="budget" name="budget" type="text" maxlength="60" placeholder="例：総額50万円以内、1個あたり300円程度、未定">
+      </div>
+
+      <div class="field">
+        <label for="message">ご相談内容<span class="req">必須</span></label>
+        <textarea class="textarea" id="message" name="message" required maxlength="4000" aria-describedby="err-message hint-message"></textarea>
+        <p class="hint" id="hint-message">作りたいもの、用途、配る相手、参考にしたい商品など、わかる範囲でご記入ください。</p>
+        <p class="error-msg" id="err-message" hidden>ご相談内容を入力してください。</p>
+      </div>
+
+      <div class="field">
+        <label for="files">参考画像・資料<span class="opt">任意</span></label>
+        <input class="input" id="files" name="files" type="file" multiple accept="image/jpeg,image/png,image/webp,image/gif,application/pdf" aria-describedby="hint-files err-files">
+        <p class="hint" id="hint-files">JPG・PNG・PDFなど3点まで、合計8MBまで。大きいファイルや動画は、送信後にメールまたはLINEでお送りください。</p>
+        <ul class="file-list" id="file-list"></ul>
+        <p class="error-msg" id="err-files" hidden></p>
+      </div>
+
+      <div class="hp" aria-hidden="true">
+        <label for="website">このフィールドは空のままにしてください</label>
+        <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+      </div>
+
+      
+
+      <div class="field">
+        <label class="consent">
+          <input type="checkbox" id="agree" name="agree" required aria-describedby="err-agree">
+          <span><a href="privacy.html" target="_blank" rel="noopener">プライバシーポリシー</a>に同意のうえ送信します。</span>
+        </label>
+        <p class="error-msg" id="err-agree" hidden>送信するには、プライバシーポリシーへの同意が必要です。</p>
+      </div>
+
+      <button class="btn btn-primary submit" type="submit" id="submit">この内容で送信する</button>
+    </form>
+
+    <aside class="aside" aria-label="LINEでのご相談">
+      <h2>画像を送って相談したい方は</h2>
+      <p>参考画像を送るだけで「これは作れますか？」と相談できます。作りたい商品・数量・希望納期もあわせてお送りください。</p>
+      <a class="btn btn-line" href="https://lin.ee/njMOqP2" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9-.2 1-.7 2.3-1 3.1 0 0 3.9-1.6 7-4.6C19.9 16 22 13.7 22 11c0-4.4-4.5-8-10-8Z" fill="currentColor"/><path d="M7 9.5v3.5h2M10.5 9.5V13M12.5 13V9.5l2.6 3.5V9.5M17.5 9.5h-1.6V13h1.6M15.9 11.2h1.4" fill="none" stroke="#048a3c" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+LINEで相談する</a>
+      <p>メールでのお問い合わせ：<br><a href="mailto:gortacyokohama@gmail.com">gortacyokohama@gmail.com</a></p>
+    </aside>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-brand">GORTAC</div>
+    <p style="margin:0">株式会社GORTAC<br>神奈川県横浜市中区南仲通4-40 南山ビル301</p>
+    <ul class="footer-links">
+      <li><a href="/gortac-site/index.html#company">会社概要</a></li>
+      <li><a href="/gortac-site/contact.html">お問い合わせ</a></li>
+      <li><a href="/gortac-site/privacy.html">プライバシーポリシー</a></li>
+    </ul>
+    <p style="margin:0">&copy; 2026 GORTAC Co., Ltd.</p>
+  </div>
+</footer>
+<div class="fixed-cta" aria-label="ご相談窓口">
+  <a class="btn btn-line" href="https://lin.ee/njMOqP2" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9-.2 1-.7 2.3-1 3.1 0 0 3.9-1.6 7-4.6C19.9 16 22 13.7 22 11c0-4.4-4.5-8-10-8Z" fill="currentColor"/><path d="M7 9.5v3.5h2M10.5 9.5V13M12.5 13V9.5l2.6 3.5V9.5M17.5 9.5h-1.6V13h1.6M15.9 11.2h1.4" fill="none" stroke="#048a3c" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+LINEで相談</a>
+  <a class="btn btn-primary" href="/gortac-site/contact.html">フォームで相談</a>
+</div>
+<script src="/gortac-site/assets/site.js?v=202610200032" defer></script>
+
+<script src="assets/form.js?v=202610200032" defer></script>
+</body>
+</html>
